@@ -5,7 +5,7 @@
 
 ## Description
 
-대회 링크 : https://aifactory.space/competition/detail/2068
+대회 링크 : https://aifactory.space/competition/detail/2067
 
 대회 기간 : 2022.07.07(목) 8:00 ~ 2022.08.08(월) 18:00
 
