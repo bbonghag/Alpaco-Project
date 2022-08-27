@@ -1,2 +1,7 @@
 # Alpaco-Project
-ML/DL Study
+
+## 알파코 2기 (22.03 - 22.09)
+
+ML/DL Project
+
+---
