@@ -62,7 +62,7 @@
     
     <img src="https://user-images.githubusercontent.com/103362361/187386154-609a16be-80f0-448a-8033-e97df87c3954.png"  width="600" height="400"/> <br/>
     
-                                                < 예측 결과 이미지 >
+       < 예측 결과 이미지 >
     
 
    
