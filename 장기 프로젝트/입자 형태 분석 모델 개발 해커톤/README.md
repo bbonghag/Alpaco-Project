@@ -46,6 +46,14 @@
    4주차(8/1 ~ 8/8) : Optimizer, Lr-scheduler 분배 후 선정, 성능향상을 위한 하이퍼파라미터 조정. 
    
    
+   
+ 3. 결과 : 62팀 중 7등 달성!
+
+    동글동글
+    
+    
+    <img src="https://user-images.githubusercontent.com/103362361/187385788-913ff59d-cc4a-4d4a-bebc-456c99575e92.png"  width="500" height="300"/>
+   
 
 
 ---
