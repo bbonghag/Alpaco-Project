@@ -30,7 +30,22 @@
    객체 카테고리는 1개(Normal) 클래스만 존재, 이미지 해상도는 (Height, Width) = (1024, 1280) 크기
 
 
-2. 
+
+2. 진행 내용
+
+   애옹 김애옹.
+   
+   1주차(7/13 ~ 7/17) : Instance segmentation 공부, MMdetection 라이브러리 사용법 익히기, base-line 돌려보기, EDA(데이터분석)
+
+   2주차(7/18 ~ 7/24) : Segmentation model 조원들에게 분배후 제출하여 점수가 높은 4가지 모델 (SCNet, Mask R-CNN, Mask Scoring R-CNN, Cascade Mask R-CNN) 
+   선정 후 model 공부, modeling
+
+   3주차(7/25 ~ 7/31) : 전처리 - Augmentation(이미지 증강 기법) 리스트업하여 각각 어떤 증강기법을 사용할 것인지 분배하고 성능확인 및 어떤걸 쓸지 선정.
+   backbone 분배후 성능확인 및 backbone 선정
+
+   4주차(8/1 ~ 8/8) : Optimizer, Lr-scheduler 분배 후 선정, 성능향상을 위한 하이퍼파라미터 조정. 
+   
+   
 
 
 ---
