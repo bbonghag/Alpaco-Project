@@ -20,7 +20,7 @@
 
 
 
-<img src="https://user-images.githubusercontent.com/103362361/187381517-1abe006c-6073-4f27-9e55-ae35d388828e.png"  width="500" height="300"/>
+<img src="https://user-images.githubusercontent.com/103362361/187381517-1abe006c-6073-4f27-9e55-ae35d388828e.png"  width="500" height="300"/> <br/>
 
 
 1. 데이터 : LG화학에서 제공하느 유체상에 떠다니는 입자를 촬영한 사진.
@@ -54,11 +54,11 @@
     
     
     
-    <img src="https://user-images.githubusercontent.com/103362361/187385788-913ff59d-cc4a-4d4a-bebc-456c99575e92.png"  width="500" height="300"/>
+    <img src="https://user-images.githubusercontent.com/103362361/187385788-913ff59d-cc4a-4d4a-bebc-456c99575e92.png"  width="500" height="300"/> <br/>
     
     
     
-    <img src="https://user-images.githubusercontent.com/103362361/187386154-609a16be-80f0-448a-8033-e97df87c3954.png"  width="500" height="300"/>
+    <img src="https://user-images.githubusercontent.com/103362361/187386154-609a16be-80f0-448a-8033-e97df87c3954.png"  width="500" height="300"/> <br/>
     
     예측 결과 이미지 
     
