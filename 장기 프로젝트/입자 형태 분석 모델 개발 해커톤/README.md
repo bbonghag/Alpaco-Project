@@ -17,5 +17,7 @@
 
 ## Usage Library & Baseline
 
-Usage Library : https://github.com/open-mmlab/mmdetection
+Usage Library : MMdetection ( https://github.com/open-mmlab/mmdetection )
+
+
 
