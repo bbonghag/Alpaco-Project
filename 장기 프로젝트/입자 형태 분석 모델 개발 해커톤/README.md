@@ -56,13 +56,13 @@
     
     
     
-    <img src="https://user-images.githubusercontent.com/103362361/187385788-913ff59d-cc4a-4d4a-bebc-456c99575e92.png"  width="500" height="300"/> <br/>
+    <img src="https://user-images.githubusercontent.com/103362361/187385788-913ff59d-cc4a-4d4a-bebc-456c99575e92.png"  width="600" height="400"/> <br/>
     
     <br/>
     
-    <img src="https://user-images.githubusercontent.com/103362361/187386154-609a16be-80f0-448a-8033-e97df87c3954.png"  width="500" height="300"/> <br/>
+    <img src="https://user-images.githubusercontent.com/103362361/187386154-609a16be-80f0-448a-8033-e97df87c3954.png"  width="600" height="400"/> <br/>
     
-     < 예측 결과 이미지 >
+                                                < 예측 결과 이미지 >
     
 
    
