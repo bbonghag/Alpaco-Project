@@ -17,9 +17,8 @@
 
 팀 : DeepDream(조장 : 김x현, 조원 : 김x나, 이x정, 소x희, 이x학)
 
-![lg_instance_segmentation](, width="100" height="100")
 
-<img src="https://user-images.githubusercontent.com/103362361/187381517-1abe006c-6073-4f27-9e55-ae35d388828e.png  width="200" height="400"/>
+<img src="https://user-images.githubusercontent.com/103362361/187381517-1abe006c-6073-4f27-9e55-ae35d388828e.png"  width="200" height="400"/>
 
 ---
 
