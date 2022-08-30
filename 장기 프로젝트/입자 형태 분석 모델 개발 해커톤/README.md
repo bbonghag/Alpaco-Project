@@ -19,5 +19,7 @@
 
 Usage Library : MMdetection ( https://github.com/open-mmlab/mmdetection )
 
+Base line : Mask R-CNN (대회측에서 baseline code 제공)
 
+---
 
