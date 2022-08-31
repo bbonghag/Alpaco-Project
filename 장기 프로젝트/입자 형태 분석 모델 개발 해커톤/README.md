@@ -36,11 +36,7 @@
    
    1주차(7/13 ~ 7/17) : Instance segmentation 공부, MMdetection 라이브러리 사용법 익히기, base-line 돌려보기, EDA(데이터분석) <br/>
    
-   MMdetection Reference : 
-   
-   [MMDetection tutorial](https://greeksharifa.github.io/references/2021/09/05/MMDetection02/) <br/>
-
-   [MMDetection Config](https://velog.io/@dust_potato/MM-Detection-Config-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)
+   MMdetection Reference : [MMDetection tutorial](https://greeksharifa.github.io/references/2021/09/05/MMDetection02/),  [MMDetection Config](https://velog.io/@dust_potato/MM-Detection-Config-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)
 
    2주차(7/18 ~ 7/24) : Segmentation model 조원들에게 분배후 제출하여 점수가 높은 모델들  (SCNet, Mask R-CNN, Mask Scoring R-CNN, Cascade Mask R-CNN)
    선정 후 model 공부, modeling <br/>
