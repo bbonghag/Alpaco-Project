@@ -48,7 +48,7 @@
    수x  |  Solov2 |  0.5393581245  |
    소x  |  Cascade Mask R-CNN_r50_fpn_1x_coco | 0.5850912865 |
    소x  |  Mask Scoring R-CNN_r50_fpn_1x_coco | 0.5636328897  |
-   봉x  |  Hybird Task - htc_r50_fpn_1x_coco | 0.5548114978  |
+   봉x  |  Hybird Task Cascade=htc_r50_fpn_1x_coco | 0.5548114978  |
    국x  |  Mask R-CNN_r50_fpn_1x_coco  |  0.5472226479 |
 
 
