@@ -24,7 +24,7 @@
 
 
 
-1. 데이터 : LG화학에서 제공하느 유체상에 떠다니는 입자를 촬영한 사진. <br/>
+1. 데이터 : LG화학에서 제공하는 유체상에 떠다니는 입자를 촬영한 사진. <br/>
    
    train dataset 520장, Test dataset 350장 및 어노테이션 파일(입자 레이블링 형식에 따라 label_train.json, label(polygon)train.json)  <br/>
    
@@ -33,25 +33,36 @@
 
 
 2. 진행 내용
-
-   애옹 김애옹. <br/>
    
    1주차(7/13 ~ 7/17) : Instance segmentation 공부, MMdetection 라이브러리 사용법 익히기, base-line 돌려보기, EDA(데이터분석) <br/>
 
-   2주차(7/18 ~ 7/24) : Segmentation model 조원들에게 분배후 제출하여 점수가 높은 4가지 모델 (SCNet, Mask R-CNN, Mask Scoring R-CNN, Cascade Mask R-CNN)
+   2주차(7/18 ~ 7/24) : Segmentation model 조원들에게 분배후 제출하여 점수가 높은 모델들  (SCNet, Mask R-CNN, Mask Scoring R-CNN, Cascade Mask R-CNN)
    선정 후 model 공부, modeling <br/>
+   ( Mask R-CNN은 다른 모델들의 베이스 모델이기에 같이 공부하려고 선정! )
+   
+   조원 | 분배모델| 점수
+   ----|-------|-------|
+   현x  |  SCNet_r50_fpn_1x(12epoch)_coco  |  0.5861291233  |
+   수x  |  Solov2 |  0.5393581245  |
+   소x  |  Cascade Mask R-CNN_r50_fpn_1x_coco | 0.5850912865 |
+   소x  |  Mask Scoring R-CNN_r50_fpn_1x_coco | 0.5636328897  |
+   봉x  |  Hybird Task - htc_r50_fpn_1x_coco | 0.5548114978  |
+   국x  |  Mask R-CNN_r50_fpn_1x_coco  |  0.5472226479 |
+
+
 
    3주차(7/25 ~ 7/31) : 전처리 - Augmentation(이미지 증강 기법) 리스트업하여 각각 어떤 증강기법을 사용할 것인지 분배하고 성능확인 및 어떤걸 쓸지 선정.
    backbone 분배후 성능확인 및 backbone 선정 <br/>
 
    4주차(8/1 ~ 8/8) : Optimizer, Lr-scheduler 분배 후 선정, 성능향상을 위한 하이퍼파라미터 조정. <br/><br/>
    
-   
+  
+  
+  
+  
+  
    
  3. 결과 : 62팀 중 7등 달성!
-
-    동글동글
-    
     
     
     
