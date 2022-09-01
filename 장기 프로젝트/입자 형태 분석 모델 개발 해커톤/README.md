@@ -26,7 +26,7 @@
 
 1. 데이터 : LG화학에서 제공하는 유체상에 떠다니는 입자를 촬영한 사진. <br/>
    
-   train dataset 520장, Test dataset 350장 및 어노테이션 파일(입자 레이블링 형식에 따라 label_train.json, label(polygon)train.json)  <br/>
+   train dataset 520장, Test dataset 350장 및 coco dataset 형식의 어노테이션 파일(입자 레이블링 형식에 따라 label_train.json, label(polygon)train.json)  <br/>
    
    객체 카테고리는 1개(Normal) 클래스만 존재, 이미지 해상도는 (Height, Width) = (1024, 1280) 크기 <br/>
 
@@ -42,13 +42,16 @@
    선정 후 model 공부, modeling <br/>
    ( Mask R-CNN은 다른 모델들의 베이스 모델이기에 같이 공부하려고 선정! )
    
+   
+   - 인원별 분배한 모델을 돌려보고 
    조원 | 분배모델| 점수
-   ----|-------|-------|
+   -----|-------|-------|
    현x  |  SCNet_r50_fpn_1x(12epoch)_coco  |  0.5861291233  |
    수x  |  Solov2 |  0.5393581245  |
    소x  |  Cascade Mask R-CNN_r50_fpn_1x_coco | 0.5850912865 |
    소x  |  Mask Scoring R-CNN_r50_fpn_1x_coco | 0.5636328897  |
    봉x  |  Hybird Task Cascade=htc_r50_fpn_1x_coco | 0.5548114978  |
+   봉x  |  YOLACT_r50_1x8_coco | 0.354253251 |
    국x  |  Mask R-CNN_r50_fpn_1x_coco  |  0.5472226479 |
 
 
