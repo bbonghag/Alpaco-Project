@@ -45,7 +45,16 @@ Challenge Link : https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnor
 
    
 
-   
+   2. 진행 내용
+
+     정리중 
+      
+      
+     
+
+
+
+
     
     
     
