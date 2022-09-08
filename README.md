@@ -28,6 +28,8 @@ Challenge Link : https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnor
     |6 | Infiltration|13 | Pulmonary fibrosis|
     
     <img src="https://user-images.githubusercontent.com/103362361/188309386-e74a9214-643e-495b-acb5-cf72e455e5b9.jpg"  width="400" height="300"/>
+    
+    => 💡 데이터 불균형이 심하다 -> 학습에 영향을 줄수있기에 이문제를 어떻게 다룰지에 대한 방법이 필요.
   
 <!--     |라벨|병명|사진|라벨|병명|사진|
     |----|----|----|----|----|----|
