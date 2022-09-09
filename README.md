@@ -1,21 +1,32 @@
-## Kaggle VinBigData Chest X-ray Abnormalities Detection 🏥📽
+# Kaggle VinBigData Chest X-ray Abnormalities Detection 🏥📽
 
 ### Chest X-ray Image를 object detection을 통해 폐 관련 14가지 질병을 detection.  
 
+---
+
+## Description
+
 Purpose : 의료 종사자가 X-ray 이미지를 보고 진단을 내릴때 도움을 주어서 업무 부담을 줄이고자 한 보조 프로그램.
 
-Team : DeepDream (조장:김x현, 조원:이x학, 김x나, 이x정, 소x희)
+Team : DeepDream (조장:김수현, 조원:이봉학, 김현나, 이x정, 소x희)
 
 Challenge Link : https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-detection
 
 ---
 
-### Description
+## WorkFlow
 
-1. 데이터 : Kaggle의 14개 라벨의 이미지 15000장(512x512x3)  및 63574개의 라벨 csv 파일. [Image Dataset](https://www.kaggle.com/datasets/awsaf49/vinbigdata-512-image-dataset), [Label Dataset](https://www.kaggle.com/datasets/awsaf49/vinbigdata-yolo-labels-dataset)
+### 1. 데이터  
+
+Kaggle의 14개 라벨의 이미지 15000장(512x512x3)  및 63574개의 라벨 csv 파일. 
+
+[Image Dataset](https://www.kaggle.com/datasets/awsaf49/vinbigdata-512-image-dataset) & [Label Dataset](https://www.kaggle.com/datasets/awsaf49/vinbigdata-yolo-labels-dataset)
 
   - 데이터 분석
     - 라벨값과 병명
+    - X-ray 이미지이기에 어느정도의 도메인 지식 및 조사가 필요. 각 라벨에 대한 사전조사를 하였다.
+    
+    <br/>
     
     |라벨|병명|라벨|병명|
     |----|----|----|----|
@@ -29,7 +40,7 @@ Challenge Link : https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnor
     
     <img src="https://user-images.githubusercontent.com/103362361/188309386-e74a9214-643e-495b-acb5-cf72e455e5b9.jpg"  width="400" height="300"/>
     
-    => 💡 데이터 불균형이 심하다 -> 학습에 영향을 줄수있기에 이문제를 어떻게 다룰지에 대한 방법이 필요.
+    => 💡 데이터 불균형이 심하다 -> 학습에 영향을 줄수있기에 이문제를 어떻게 다룰지에 대한 방법이 필요. (다운샘플링을 할것인지, 부족한 라벨에 대해서 추가적인 Augmentation을 해줄것인지 등등..)
   
 <!--     |라벨|병명|사진|라벨|병명|사진|
     |----|----|----|----|----|----|
@@ -44,10 +55,11 @@ Challenge Link : https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnor
 
 
    
+### 2. 진행 내용
 
-   2. 진행 내용
+#### 1. data preprocessing
 
-     정리중 
+
       
       
      
