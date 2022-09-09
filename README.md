@@ -6,7 +6,7 @@
 
 ## Description
 
-Purpose : 의료 종사자가 X-ray 이미지를 보고 진단을 내릴때 도움을 주어서 업무 부담을 줄이고자 한 보조 프로그램.
+Purpose : Data augmentation, 모델에 따른 성능 비교
 
 Team : DeepDream (조장:김수현, 조원:이봉학, 김현나, 이x정, 소x희)
 
@@ -18,13 +18,17 @@ Challenge Link : https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnor
 
 ### 1. 데이터  
 
-Kaggle의 14개 라벨의 이미지 15000장(512x512x3)  및 63574개의 라벨 csv 파일. 
+Kaggle의 ‘VinBigData Chest X-ray Abnormalites Detection’ 대회에서 베트남의 두 병원에서 제공해준 환자들의 흉부 x-ray 데이터셋
+
+14개 라벨의 train image 15000장, test image 3000장 (512x512x3) & train image의 image_id, class_id, x_min, y_min, x_max, y_max 정보가 들어있는 train.csv 파일. 
 
 [Image Dataset](https://www.kaggle.com/datasets/awsaf49/vinbigdata-512-image-dataset) & [Label Dataset](https://www.kaggle.com/datasets/awsaf49/vinbigdata-yolo-labels-dataset)
 
   - 데이터 분석
-    - 라벨값과 병명
     - X-ray 이미지이기에 어느정도의 도메인 지식 및 조사가 필요. 각 라벨에 대한 사전조사를 하였다.
+    - 15000장 train image에서 14번라벨, 정상인 image 10606장을 빼고 남은 이미지는 4394장. => 이미지 4393장, 라벨 36096개
+    - 하나의 이미지에 대해 여러 병변이 존재하는, 단일 이미지-다중 라벨
+    - 라벨값과 병명
     
     <br/>
     
@@ -38,9 +42,17 @@ Kaggle의 14개 라벨의 이미지 15000장(512x512x3)  및 63574개의 라벨 
     |5 | [ILD(interstitial lung disease)](https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31848)|12 | Pneumothorax|
     |6 | Infiltration|13 | Pulmonary fibrosis|
     
-    <img src="https://user-images.githubusercontent.com/103362361/188309386-e74a9214-643e-495b-acb5-cf72e455e5b9.jpg"  width="400" height="300"/>
+    <!-- <img src="https://user-images.githubusercontent.com/103362361/188309386-e74a9214-643e-495b-acb5-cf72e455e5b9.jpg"  width="400" height="300"/> -->
+    
+    <img src="https://user-images.githubusercontent.com/103362361/189323442-ceb8591e-bd50-4b49-9ea2-426f7253fed3.png"  width="400" height="300"/>
     
     => 💡 데이터 불균형이 심하다 -> 학습에 영향을 줄수있기에 이문제를 어떻게 다룰지에 대한 방법이 필요. (다운샘플링을 할것인지, 부족한 라벨에 대해서 추가적인 Augmentation을 해줄것인지 등등..)
+    
+    => ❗ 데이터 불균형 해결이 어려웠던 이유 : 라벨 간의 극단적인 양의 차이, 단일 이미지에 대한 다중 라벨
+    
+    (이미지 하나에 라벨이 2-3개만 있거나 7~8개, 10개이상이 존재하는 등 이미지마다 라벨의 개수가 다르기때문에 단순히 이미지만 증강시키는것이 아니라 라벨도 신경을 써야함)
+    
+    
   
 <!--     |라벨|병명|사진|라벨|병명|사진|
     |----|----|----|----|----|----|
@@ -58,6 +70,11 @@ Kaggle의 14개 라벨의 이미지 15000장(512x512x3)  및 63574개의 라벨 
 ### 2. 진행 내용
 
 #### 1. data preprocessing
+
+
+#### 2. 
+
+
 
 
       
