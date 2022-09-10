@@ -16,7 +16,7 @@ Challenge Link : https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnor
 
 ## WorkFlow
 
-### 1. 데이터  
+### 1. 데이터 소개 및 분석.
 
 Kaggle의 ‘VinBigData Chest X-ray Abnormalites Detection’ 대회에서 베트남의 두 병원에서 제공해준 환자들의 흉부 x-ray 데이터셋
 
@@ -71,10 +71,33 @@ Kaggle의 ‘VinBigData Chest X-ray Abnormalites Detection’ 대회에서 베�
    
 ### 2. 진행 내용
 
-#### 1. data preprocessing
+#### 1. data preprocessing - 추가정리필요
+
+이미지가 적음 -> Augmentation이 필요하다고 판단. 그럼 어떤 기법을 적용시킬 것인가?? 
+
+-> 비슷한 Task를 진행한 Reference들 참고. (폐X-ray이미지 Object Detection 논문들, 코로나로 관련 논문들이 많이 올라왔음)
+
+주로 많이 한 Augmentation 기법 중 rotation 90도, zoom in, flip(horizontal)... 
 
 
-#### 2. 
+
+#### 2. dataset 생성 및 구분 - 추가정리필요
+
+Augmentation을 한 이미지들을 coco형식으로 만듬. 조원들에게 배포.
+
+어떤 Augmentation이 성능향상에 좋았는지 비교를 위해 여러 데이터셋을 생성
+
+분류(A)|분류(B)|분류(C)|분류(D)|
+-------|-------|-------|-------|
+원본|rotation : 90°|rotation : 90°|rotation : 90°|
+&nbsp;|flip: horizontal|flip: horizontal|flip: horizontal|
+&nbsp;|zoom: 10%|zoom: 10%|zoom: 10%|
+&nbsp;|&nbsp;|cutmix|cutmix|
+&nbsp;|&nbsp;|mosaic|mosaic|
+&nbsp;|&nbsp;| CLAHE | CLAHE 
+    
+
+
 
 
 
