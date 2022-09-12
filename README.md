@@ -8,7 +8,7 @@
 
 Purpose : Data augmentation, 모델에 따른 성능 비교
 
-Team : DeepDream (조장:김수현, 조원:이봉학, 김현나, 이x정, 소x희)
+Team : DeepDream 
 
 Challenge Link : https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-detection
 
