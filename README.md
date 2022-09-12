@@ -57,47 +57,41 @@ Challenge Link : https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnor
     
     (이미지 하나에 라벨이 2-3개만 있거나 7~8개, 10개이상이 존재하는 등 이미지마다 라벨의 개수가 다르기때문에 단순히 이미지만 증강시키는것이 아니라 라벨도 신경을 써야함)
     
-    - [병명 사전조사](https://www.notion.so/4e8668bfaf684adbab481b49f93207ef)(노션링크)
+    - [병명 사전조사](https://www.notion.so/4e8668bfaf684adbab481b49f93207ef) (노션링크)
     
     => 💡 사전조사를 보면 흉부 X-ray를 통해 폐 질병을 진단 시, 폐의 '불투명도'는 매우 중요한 요소임을 확인. 이미지를 증강하거나 변형할 때 명암을 조절함에 있어서 주의가 필요
     
     
-  <!--
-    |라벨|병명|사진|라벨|병명|사진|
-    |----|----|----|----|----|----|
-    |0 | [Aortic enlargement](https://www.baptisthealth.com/services/heart-care/conditions/aortic-aneurysm-enlarged-aorta)|<img src="https://user-images.githubusercontent.com/103362361/188856182-1965963c-7a6b-4fb2-a867-0a3ec25842a6.png"  width="200" height="200"/>|7 | Lung Opacity|<img src="https://user-images.githubusercontent.com/103362361/188861827-bfed1297-7fc1-46f2-8bd2-2d283a7eac82.png"  width="200" height="200"/>|
-    |1 | [Atelectasis](https://terms.naver.com/entry.naver?docId=927036&cid=51007&categoryId=51007)|<img src="https://user-images.githubusercontent.com/103362361/188856681-f3db74aa-9db1-43be-9a6e-32b3b974b4f1.png"  width="200" height="200"/>|8 | Nodule/Mass(결절/혹)|<img src="https://user-images.githubusercontent.com/103362361/188862273-df3186e4-e80c-49e0-a8f2-ee8df3663684.png"  width="200" height="200"/>|
-    |2 | [Calcification](https://terms.naver.com/entry.naver?docId=493788&cid=60408&categoryId=55558)|<img src="https://user-images.githubusercontent.com/103362361/188857391-3eaec5b8-6e2a-4cac-8cca-9d1b38212c6d.png"  width="200" height="200"/>|9 | Other lesion|<img src="https://user-images.githubusercontent.com/103362361/188862546-573d91d4-2cdc-4a69-b047-152ca706811e.png"  width="200" height="200"/>|
-    |3 | [Cardiomegaly](https://terms.naver.com/entry.naver?docId=927305&cid=51007&categoryId=51007)|<img src="https://user-images.githubusercontent.com/103362361/188857765-79d8fef5-ad5d-4e1d-b923-46587cd76e49.png"  width="200" height="200"/>|10 | Pleural effusion|<img src="https://user-images.githubusercontent.com/103362361/188863451-88206ec6-a5b5-4c55-b683-4e4b5cedcb9a.png"  width="200" height="200"/>|
-    |4 | [Consolidation](https://blog.naver.com/daytoday_life/221561444265)|<img src="https://user-images.githubusercontent.com/103362361/188860325-a53560df-ca0a-4065-9b2a-ed4810c071dc.png"  width="200" height="200"/>|11 | Pleural thickening|<img src="https://user-images.githubusercontent.com/103362361/188863622-733c3db1-7295-4010-8649-56f2310f2ad6.png"  width="200" height="200"/>|
-    |5 | [ILD(interstitial lung disease)](https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31848)|<img src="https://user-images.githubusercontent.com/103362361/188860660-5e410681-6a88-4e24-8b68-91d70ed991f0.png"  width="200" height="200"/>|12 | Pneumothorax|<img src="https://user-images.githubusercontent.com/103362361/188863766-89054ee8-8ba3-4255-8c5d-e5da9f78c323.png"  width="200" height="200"/>|
-    |6 | Infiltration|<img src="https://user-images.githubusercontent.com/103362361/188860923-6284177b-452c-466f-b2ac-19427f7d2507.png"  width="200" height="200"/>|13 | Pulmonary fibrosis|<img src="https://user-images.githubusercontent.com/103362361/188863911-78194e9b-8c39-4c4b-835e-d3240f70c444.png"  width="200" height="200"/>| 
--->
-
+<br/>
 
 
 
 ### 2. Preprocessing
 
 
+
 #### 1. Image Augmentation
 
-이미지 4394장으로 학습하기에 적다고 생각하여 Augmentation이 필요하다고 판단. 그럼 어떤 기법을 적용시킬 것인가?? 
+💬 이미지 4394장으로 학습하기에 적다고 생각하여 Augmentation이 필요하다고 판단. 
 
--> 비슷한 Task를 진행한 Reference들 참고. (폐 X-ray 이미지 Object Detection 논문들, 코로나로 관련 논문들이 많이 올라왔음)
+=> ❔ 그럼 어떤 기법을 적용시킬 것인가?? 
+
+=> 💡 비슷한 Task를 진행한 Reference들 참고. (폐 X-ray 이미지 Object Detection 논문들, 코로나로 관련 논문들이 많이 올라왔음)
 
 주로 많이 한 Augmentation 기법 중 rotation 90도, zoom in, flip(horizontal)... 등등 리스트업을 하고 여러 데이터셋을 만들기로 하였다.
 
 
+<br/>
 
 
 
 #### 2. Dataset 생성 및 구분 - 추가정리필요
 
-Augmentation을 한 이미지들을 coco형식으로 만듬. 조원들에게 배포.
+ <img src="https://user-images.githubusercontent.com/103362361/189592650-22ae97c3-60c9-487e-9ccf-c891bc914128.png"  width="400" height="300"/>
 
-어떤 Augmentation이 성능향상에 좋았는지 비교를 위해 여러 데이터셋을 생성
+어떤 Augmentation들이 성능향상에 좋았는지 비교를 위해 여러 데이터셋을 생성
 
+<!--
 분류(A)|분류(B)|분류(C)|분류(D)|
 -------|-------|-------|-------|
 원본|rotation : 90°|rotation : 90°|rotation : 90°|
@@ -106,18 +100,30 @@ Augmentation을 한 이미지들을 coco형식으로 만듬. 조원들에게 배
 &nbsp;|&nbsp;|cutmix|cutmix|
 &nbsp;|&nbsp;|mosaic|mosaic|
 &nbsp;|&nbsp;| CLAHE | CLAHE 
+-->
     
+=> ❔ Augmentation이 어느정도 사용될 때 성능이 가장 좋을까??
 
-
+<br/>
 
 #### 3. COCO데이터셋으로 변환 및 배포.
 
+- Augmentation을 한뒤에 이미지와 라벨, 바운딩박스 좌표가 들어있는 텍스트들을 COCO형식 데이터셋으로 만들어 조원들에게 배포하였다. 해당 [라이브러리](https://github.com/RapidAI/YOLO2COCO) (RapidAI-YOLO2COCO)를 사용해서 생성하였다.
+
+=> ❔ COCO형식으로 데이터셋을 변환해준 이유는?? : 모델을 여러개 사용했으므로 데이터셋을 하나의 양식으로 통일하고 각 모델에 맞게 변형시키는 코드를 만들어서 '이미지 증강->COCO셋으로 생성->훈련' 일련의 과정을 자동화함.
 
 
 
 ### 3. Modeling
 
+
 #### 1. Model Selection
+
+- Faster R-CNN, YOLOX, EfficientDet 3개 모델 선정 및 사용
+
+=> ❔ 왜 하나의 모델이 아닌 여러 모델을 사용했는가??
+
+=> ❔ 모델 각각의 선정이유는??
 
 
 
