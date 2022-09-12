@@ -16,17 +16,20 @@ Challenge Link : https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnor
 
 ## WorkFlow
 
+<img src="https://user-images.githubusercontent.com/103362361/189588057-11ec4eaf-dba6-4362-ba50-03466d25d85a.png"  width="400" height="300"/>
+
 ### 1. 데이터 소개 및 분석.
 
-Kaggle의 ‘VinBigData Chest X-ray Abnormalites Detection’ 대회에서 베트남의 두 병원에서 제공해준 환자들의 흉부 x-ray 데이터셋
+- Kaggle의 ‘VinBigData Chest X-ray Abnormalites Detection’ 대회에서 베트남의 두 병원에서 제공해준 환자들의 흉부 x-ray 데이터셋
 
-14개 라벨의 train image 15000장, test image 3000장 (512x512x3) & train image의 image_id, class_id, x_min, y_min, x_max, y_max 정보가 들어있는 train.csv 파일. 
+- 14개 라벨의 train image 15000장, test image 3000장 (512x512x3) & train image의 image_id, class_id, x_min, y_min, x_max, y_max 정보가 들어있는 train.csv 파일. 
 
-[Image Dataset](https://www.kaggle.com/datasets/awsaf49/vinbigdata-512-image-dataset) & [Label Dataset](https://www.kaggle.com/datasets/awsaf49/vinbigdata-yolo-labels-dataset)
+- [Image Dataset](https://www.kaggle.com/datasets/awsaf49/vinbigdata-512-image-dataset) & [Label Dataset](https://www.kaggle.com/datasets/awsaf49/vinbigdata-yolo-labels-dataset)
 
-  - 데이터 분석
+  
+- 데이터 분석
     - X-ray 이미지이기에 어느정도의 도메인 지식 및 조사가 필요. 각 라벨에 대한 사전조사를 하였다. 
-    - 15000장 train image에서 14번라벨, 정상인 image 10606장을 빼고 남은 이미지는 4394장. => 이미지 4393장, 라벨 36096개
+    - 15000장 train image에서 14번라벨, 정상인 image 10606장을 빼고 남은 이미지는 4394장. => 이미지 4394장, 라벨 36096개
     - 하나의 이미지에 대해 여러 병변이 존재하는, 단일 이미지-다중 라벨
     - 라벨값과 병명
     
@@ -73,20 +76,23 @@ Kaggle의 ‘VinBigData Chest X-ray Abnormalites Detection’ 대회에서 베�
 
 
 
-   
-### 2. 진행 내용
 
-#### 1. data preprocessing - 추가정리필요
-
-이미지가 적음 -> Augmentation이 필요하다고 판단. 그럼 어떤 기법을 적용시킬 것인가?? 
-
--> 비슷한 Task를 진행한 Reference들 참고. (폐X-ray이미지 Object Detection 논문들, 코로나로 관련 논문들이 많이 올라왔음)
-
-주로 많이 한 Augmentation 기법 중 rotation 90도, zoom in, flip(horizontal)... 
+### 2. Preprocessing
 
 
+#### 1. Image Augmentation
 
-#### 2. dataset 생성 및 구분 - 추가정리필요
+이미지 4394장으로 학습하기에 적다고 생각하여 Augmentation이 필요하다고 판단. 그럼 어떤 기법을 적용시킬 것인가?? 
+
+-> 비슷한 Task를 진행한 Reference들 참고. (폐 X-ray 이미지 Object Detection 논문들, 코로나로 관련 논문들이 많이 올라왔음)
+
+주로 많이 한 Augmentation 기법 중 rotation 90도, zoom in, flip(horizontal)... 등등 리스트업을 하고 여러 데이터셋을 만들기로 하였다.
+
+
+
+
+
+#### 2. Dataset 생성 및 구분 - 추가정리필요
 
 Augmentation을 한 이미지들을 coco형식으로 만듬. 조원들에게 배포.
 
@@ -102,6 +108,16 @@ Augmentation을 한 이미지들을 coco형식으로 만듬. 조원들에게 배
 &nbsp;|&nbsp;| CLAHE | CLAHE 
     
 
+
+
+#### 3. COCO데이터셋으로 변환 및 배포.
+
+
+
+
+### 3. Modeling
+
+#### 1. Model Selection
 
 
 
