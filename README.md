@@ -12,6 +12,8 @@ Team : DeepDream (조장:김수현, 조원:이봉학, 김현나, 이x정, 소x�
 
 Challenge Link : https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-detection
 
+Project period :  2022.06.13(월)  ~ 2022.07.11(월) 
+
 ---
 
 ## WorkFlow
