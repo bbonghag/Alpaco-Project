@@ -76,9 +76,9 @@ Challenge Link : https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnor
 
 => ❔ 그럼 어떤 기법을 적용시킬 것인가?? 
 
-=> 💡 비슷한 Task를 진행한 Reference들 참고. (폐 X-ray 이미지 Object Detection 논문들, 코로나로 관련 논문들이 많이 올라왔음)
+=> 💡 비슷한 Task를 진행한 Reference들 참고. (폐 X-ray 이미지 Object Detection 논문들, 코로나로 관련 논문들이 많이 올라왔음) - 어떤 레퍼런스에서 어떤 기법을 왜 사용했고 그 결과 성능이 어땠는지, 참고한 레퍼런스와 사용한 기법, 거기에 대한 결과 등 추가하기
 
-주로 많이 한 Augmentation 기법 중 rotation 90도, zoom in, flip(horizontal)... 등등 리스트업을 하고 여러 데이터셋을 만들기로 하였다.
+주로 많이 한 Augmentation 기법 중 rotation 90도, zoom in, flip(horizontal)... 등등 리스트업을 하고 여러 데이터셋을 만들기로 하였다. (임시)
 
 
 <br/>
@@ -103,6 +103,11 @@ Challenge Link : https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnor
 -->
     
 => ❔ Augmentation이 어느정도 사용될 때 성능이 가장 좋을까??
+
+=> ❔ 우리가 사용하는 데이터는 X-ray, 흑백 이미지. 각 Augmentation은 어떤 영향을 미칠까??
+
+=> ❔ X-ray나 흑백 이미지 같은 경우에 적합한 Augmentation은 무엇일까??
+
 
 <br/>
 
