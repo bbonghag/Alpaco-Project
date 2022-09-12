@@ -32,7 +32,7 @@ Kaggle의 ‘VinBigData Chest X-ray Abnormalites Detection’ 대회에서 베�
     
     <br/>
     
-    <!-- 
+    
     |라벨|병명|라벨|병명|
     |----|----|----|----|
     |0 | [Aortic enlargement](https://www.baptisthealth.com/services/heart-care/conditions/aortic-aneurysm-enlarged-aorta)|7 | Lung Opacity|
@@ -42,7 +42,7 @@ Kaggle의 ‘VinBigData Chest X-ray Abnormalites Detection’ 대회에서 베�
     |4 | [Consolidation](https://blog.naver.com/daytoday_life/221561444265)|11 | Pleural thickening|
     |5 | [ILD(interstitial lung disease)](https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31848)|12 | Pneumothorax|
     |6 | Infiltration|13 | Pulmonary fibrosis|
-    -->
+    
     
     <!-- <img src="https://user-images.githubusercontent.com/103362361/188309386-e74a9214-643e-495b-acb5-cf72e455e5b9.jpg"  width="400" height="300"/> -->
     
@@ -54,8 +54,12 @@ Kaggle의 ‘VinBigData Chest X-ray Abnormalites Detection’ 대회에서 베�
     
     (이미지 하나에 라벨이 2-3개만 있거나 7~8개, 10개이상이 존재하는 등 이미지마다 라벨의 개수가 다르기때문에 단순히 이미지만 증강시키는것이 아니라 라벨도 신경을 써야함)
     
+    - [병명 사전조사](https://www.notion.so/4e8668bfaf684adbab481b49f93207ef)(노션링크)
     
-  
+    => 💡 사전조사를 보면 흉부 X-ray를 통해 폐 질병을 진단 시, 폐의 '불투명도'는 매우 중요한 요소임을 확인. 이미지를 증강하거나 변형할 때 명암을 조절함에 있어서 주의가 필요
+    
+    
+  <!--
     |라벨|병명|사진|라벨|병명|사진|
     |----|----|----|----|----|----|
     |0 | [Aortic enlargement](https://www.baptisthealth.com/services/heart-care/conditions/aortic-aneurysm-enlarged-aorta)|<img src="https://user-images.githubusercontent.com/103362361/188856182-1965963c-7a6b-4fb2-a867-0a3ec25842a6.png"  width="200" height="200"/>|7 | Lung Opacity|<img src="https://user-images.githubusercontent.com/103362361/188861827-bfed1297-7fc1-46f2-8bd2-2d283a7eac82.png"  width="200" height="200"/>|
@@ -64,9 +68,10 @@ Kaggle의 ‘VinBigData Chest X-ray Abnormalites Detection’ 대회에서 베�
     |3 | [Cardiomegaly](https://terms.naver.com/entry.naver?docId=927305&cid=51007&categoryId=51007)|<img src="https://user-images.githubusercontent.com/103362361/188857765-79d8fef5-ad5d-4e1d-b923-46587cd76e49.png"  width="200" height="200"/>|10 | Pleural effusion|<img src="https://user-images.githubusercontent.com/103362361/188863451-88206ec6-a5b5-4c55-b683-4e4b5cedcb9a.png"  width="200" height="200"/>|
     |4 | [Consolidation](https://blog.naver.com/daytoday_life/221561444265)|<img src="https://user-images.githubusercontent.com/103362361/188860325-a53560df-ca0a-4065-9b2a-ed4810c071dc.png"  width="200" height="200"/>|11 | Pleural thickening|<img src="https://user-images.githubusercontent.com/103362361/188863622-733c3db1-7295-4010-8649-56f2310f2ad6.png"  width="200" height="200"/>|
     |5 | [ILD(interstitial lung disease)](https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31848)|<img src="https://user-images.githubusercontent.com/103362361/188860660-5e410681-6a88-4e24-8b68-91d70ed991f0.png"  width="200" height="200"/>|12 | Pneumothorax|<img src="https://user-images.githubusercontent.com/103362361/188863766-89054ee8-8ba3-4255-8c5d-e5da9f78c323.png"  width="200" height="200"/>|
-    |6 | Infiltration|<img src="https://user-images.githubusercontent.com/103362361/188860923-6284177b-452c-466f-b2ac-19427f7d2507.png"  width="200" height="200"/>|13 | Pulmonary fibrosis|<img src="https://user-images.githubusercontent.com/103362361/188863911-78194e9b-8c39-4c4b-835e-d3240f70c444.png"  width="200" height="200"/>|
+    |6 | Infiltration|<img src="https://user-images.githubusercontent.com/103362361/188860923-6284177b-452c-466f-b2ac-19427f7d2507.png"  width="200" height="200"/>|13 | Pulmonary fibrosis|<img src="https://user-images.githubusercontent.com/103362361/188863911-78194e9b-8c39-4c4b-835e-d3240f70c444.png"  width="200" height="200"/>| 
+-->
 
-     => 💡 사전조사를 보면 흉부 X-ray를 통해 폐 질병을 진단 시, 폐의 '불투명도'는 매우 중요한 요소임을 확인. 이미지를 증강하거나 변형할 때 명암을 조절함에 있어서 주의가 필요
+
 
    
 ### 2. 진행 내용
