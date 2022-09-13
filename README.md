@@ -14,6 +14,8 @@ Challenge Link : https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnor
 
 Project period :  2022.06.13(월)  ~ 2022.07.11(월) 
 
+<img src="https://user-images.githubusercontent.com/103362361/189886730-4a605ca1-22d4-4f48-a0cf-918bbdb0d492.png"  width="700" height="250"/>
+
 ---
 
 ## WorkFlow
@@ -128,11 +130,13 @@ Project period :  2022.06.13(월)  ~ 2022.07.11(월)
 
 - Faster R-CNN, YOLOX, EfficientDet 3개 모델 선정 및 사용
 
-  => ❔ 왜 하나의 모델이 아닌 여러 모델을 사용했는가??
+  => ❔ 왜 하나의 모델이 아닌 여러 모델을 사용했는가?? 
+  
+  🗨 1stage와 2stage 모델의 비교, EfficientDet은 width ,depth ,resolution에 따른 효율적인 모델, 최신모델까지 성능비교를 위해 3개를 선정함.
 
-  => ❔ 모델 각각의 선정이유는??
+  <!-- => ❔ 모델 각각의 선정이유는??
 
-
+  🗨 -->
 
 #### 1. Faster R-CNN
 
