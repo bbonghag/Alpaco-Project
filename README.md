@@ -132,23 +132,19 @@ Project period :  2022.06.13(월)  ~ 2022.07.11(월)
 
   => ❔ 왜 하나의 모델이 아닌 여러 모델을 사용했는가?? 
   
-  🗨 1stage와 2stage 모델의 비교, EfficientDet은 width ,depth ,resolution에 따른 효율적인 모델, 최신모델까지 성능비교를 위해 3개를 선정함.
+  🗨 1stage와 2stage 모델의 비교, EfficientDet은 width ,depth ,resolution에 따른 효율적인 모델, 최신모델까지 성능비교를 위해 3개를 선정함. 필자는 Faster R-CNN을 주 모델로 사용함.
+  
 
   <!-- => ❔ 모델 각각의 선정이유는??
 
   🗨 -->
 
+...모델 부분을 어떻게 정리할까??
+
 #### 1. Faster R-CNN
-
-
-
-
 
      
 #### 2. YOLOX
-
-
-
 
 
 #### 3. EfficientDet
