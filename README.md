@@ -93,7 +93,7 @@ Project period :  2022.06.13(월)  ~ 2022.07.11(월)
 
  <img src="https://user-images.githubusercontent.com/103362361/189592650-22ae97c3-60c9-487e-9ccf-c891bc914128.png"  width="400" height="300"/>
 
-어떤 Augmentation들이 성능향상에 좋았는지 비교를 위해 여러 데이터셋을 생성
+어떤 Augmentation들이 성능향상에 기여할지 비교를 위해 여러 데이터셋을 생성
 
 <!--
 분류(A)|분류(B)|분류(C)|분류(D)|
@@ -105,7 +105,19 @@ Project period :  2022.06.13(월)  ~ 2022.07.11(월)
 &nbsp;|&nbsp;|mosaic|mosaic|
 &nbsp;|&nbsp;| CLAHE | CLAHE 
 -->
-    
+
+- CATEGORY A : Augmentation이나 다른 이미지 변형을 하지 않은 원본 이미지들
+
+- CATEGORY B : 레퍼런스들에서 많이 사용된 3가지 기법을 적용.
+
+- CATEGORY C : Augmentation을 최대한 많이 사용할 경우 성능향상에 유의미한지를 알기 위해 사용.
+
+- CATEGORY D : 데이터 불균형 해소를 위해 CATEGORY A, 원본이미지셋에 라벨 1,12번 이미지들을 증강한 후에 추가해봄.
+
+
+
+
+
 => ❔ Augmentation이 어느정도 사용될 때 성능이 가장 좋을까??
 
 => ❔ 우리가 사용하는 데이터는 X-ray, 흑백 이미지. 각 Augmentation은 어떤 영향을 미칠까??
