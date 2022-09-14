@@ -168,7 +168,9 @@ Project period :  2022.06.13(월)  ~ 2022.07.11(월)
 ---
 ### 4. 결과
 
+#### Inference
 
+<img src="https://user-images.githubusercontent.com/103362361/190089691-9c8b46b2-e6d6-4b44-919e-f2cf9f9ea1e7.png"  width="300" height="300"/>
 
 
 ---
