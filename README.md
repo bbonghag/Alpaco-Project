@@ -181,10 +181,12 @@
 
 
 ### References
-- 
+- https://www.kaggle.com/code/yerramvarun/pytorch-fasterrcnn-with-group-kfold-14-class
+- https://www.kaggle.com/code/pestipeti/vinbigdata-fasterrcnn-pytorch-inference/notebook
+- https://www.kaggle.com/code/pestipeti/vinbigdata-fasterrcnn-pytorch-train/notebook
 
  
-- 추가해야 할것 : 모델 train, inference 구별해서 올리기 / 전처리 dataset_e 뒤에 모델학습 부분 제거 / EDA 추가 / 레퍼런스 정리 및 
+- 추가해야 할것 : 모델 train, inference 구별해서 올리기 / EDA 추가 / 레퍼런스 정리 
 
 
 
