@@ -88,13 +88,15 @@ from google.colab.patches import cv2_imshow
 증강 이미지 생성
 """
 
-# 나중에 함수로 만들것.
+
 # 이미지 폴더 경로 넣기
 # input_path = "Input your image path/*.image format(ex:jpg, png)"
 # image_list = [f for f in glob.glob(input_path)]
 
 path = '/content/aug_image'
 !mkdir /content/aug_image
+
+
 
 """## 1. Rotation 90도"""
 
@@ -108,6 +110,8 @@ def rotation_image(path, image_list):
         img_name = path.split('/')[-1].split('.')[0]
         cv2.imwrite(f'{path}/{img_name}'+'_rotated.png', rotated_img)
 
+        
+        
 """## 2. Flip(horizontal)"""
 
 def flip_image(path, image_list):
@@ -117,6 +121,9 @@ def flip_image(path, image_list):
         img_name = path.split('/')[-1].split('.')[0]
         cv2.imwrite(f'{path}/{img_name}'+'_flip.png', flipped_img)
 
+        
+        
+        
 """## 3. Zoomin 10%"""
 
 def zoom_image(path, image_list):
@@ -129,6 +136,9 @@ def zoom_image(path, image_list):
 
 # zoom_image(image_list)
 
+
+
+
 """## 4. CLAHE(Contrast Limited Adaptive Histogram Equalization)"""
 
 def clahe_image(path, image_list):
@@ -139,6 +149,9 @@ def clahe_image(path, image_list):
         img_name = path.split('/')[-1].split('.')[0]
         cv2.imwrite(f'{path}/{img_name}'+'_clahe.png', clahe_img)
 
+        
+        
+        
 """## 5. EqualizeHist"""
 
 def equ_image(path, image_list):
@@ -148,9 +161,11 @@ def equ_image(path, image_list):
         img_name = path.split('/')[-1].split('.')[0]
         cv2.imwrite(f'{path}/{img_name}'+'_equ.png', equ_img)
 
+        
+        
+        
 """## 6. Cutmix"""
 
-# 하나의 함수로 만들어보기.
 
 def rand_bbox(size, lamb):
     W = size[0]
@@ -172,7 +187,7 @@ def rand_bbox(size, lamb):
 
 
 # REAL
-# 우린 그럼 n_images를 4가아닌 총 images개수로 바꿔줘야겠지!
+# 우린 그럼 n_images를 4가아닌 총 images개수로 
 # Create batch of 4394 images
 from tqdm import tqdm
 def make_img_batch_labels(image_list):
