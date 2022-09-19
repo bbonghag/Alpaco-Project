@@ -181,6 +181,7 @@
 
 
 ### References
+- https://www.kaggle.com/code/dschettler8845/visual-in-depth-eda-vinbigdata-competition-data
 - https://www.kaggle.com/code/yerramvarun/pytorch-fasterrcnn-with-group-kfold-14-class
 - https://www.kaggle.com/code/pestipeti/vinbigdata-fasterrcnn-pytorch-inference/notebook
 - https://www.kaggle.com/code/pestipeti/vinbigdata-fasterrcnn-pytorch-train/notebook
