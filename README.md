@@ -187,7 +187,7 @@
 - https://www.kaggle.com/code/pestipeti/vinbigdata-fasterrcnn-pytorch-train/notebook
 
  
-- 추가해야 할것 : 모델 train, inference 구별해서 올리기 / EDA 추가 / 레퍼런스 정리 
+- 추가해야 할것 :  EDA-ploty 보이게하기 / 레퍼런스 정리 
 
 
 
