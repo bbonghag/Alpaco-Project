@@ -44,6 +44,9 @@
 <br/>
   
 ### Methods
+
+<img src="https://user-images.githubusercontent.com/103362361/189588057-11ec4eaf-dba6-4362-ba50-03466d25d85a.png"  width="400" height="300"/>
+
 - Progress
   - 병명 사전조사
   - 데이터 EDA 
@@ -56,14 +59,44 @@
 
 
 - Models  
-  - Faster R-CNN, YOLOX, EfficientDet 
+  - Faster R-CNN(봉학,현나), YOLOX(수현), EfficientDet(소정) 
   
 
 <br/>
 
 ### Result
 
+
+
+- Augmentation에 따른 dataset 종류
+  - CATEGORY A : Augmentation이나 다른 이미지 변형을 하지 않은 원본 이미지들 (4,394장)
+  - CATEGORY B : 레퍼런스들에서 많이 사용된 3가지 기법을 적용 (17,576장)
+  - CATEGORY C : Augmentation을 최대한 많이 사용할 경우 성능향상에 유의미한지를 알기 위해 사용 (30,758장)
+  - CATEGORY D : 데이터 불균형 해소를 위해 가장 적은 양의 라벨(1,12)을 갖는 이미지만 augmentation을 적용 /  나머지 라벨은 down sampling (5,999장)
+
+분류(A)|분류(B)|분류(C)|분류(D)|
+-------|-------|-------|-------|
+원본|rotation : 90°|rotation : 90°|rotation : 90°|
+&nbsp;|flip: horizontal|flip: horizontal|flip: horizontal|
+&nbsp;|zoom: 10%|zoom: 10%|zoom: 10%|
+&nbsp;|&nbsp;|cutmix|cutmix|
+&nbsp;|&nbsp;|mosaic|mosaic|
+&nbsp;|&nbsp;| CLAHE | CLAHE 
+
+<br/>
+
+- 예측 이미지
 <img src="https://user-images.githubusercontent.com/103362361/190089691-9c8b46b2-e6d6-4b44-919e-f2cf9f9ea1e7.png"  width="300" height="300"/>
+
+<br/>
+
+- 모델별 성능
+
+Model | Category A | Category B | Category C | Category D
+-------|-------|-------|-------|-------|
+EfficientDet | 0.038 | 0.046 | 0.052 | --
+Faster R-CNN | 0.012 | 0.098 | 0.013 | --
+YOLOX  |  0.021  | 0.068 | 0.147 | 0.070
 
 <br/>
 
@@ -98,7 +131,6 @@
 
  
 - 추가해야 할것 :  EDA-ploty 보이게하기 / 레퍼런스 정리 
-
 
 
 
