@@ -21,12 +21,16 @@
 - 병원가면 한번쯤은 찍어보는 Chest X-ray, 하지만 전문의라 해도 장기가 겹쳐있는 사이에 병변이 있거나 너무 작은 경우에 놓칠수 있고 이때
  치명적인 결과를 도래할 수 있다.
 - 하지만 AI를 통해 사람이 놓칠 수 있는 부분을 보완한다면 더 정확한 진단이 가능할 것이다.
-
+- 폐와 관련된 14가지의 질병을 detecting,  data augmentation에 따른 여러 model의 performance 비교
+  
 <br/>
 
 ### Data
 - Kaggle의 ‘VinBigData Chest X-ray Abnormalites Detection’ 대회에서 베트남의 두 병원에서 제공해준 환자들의 흉부 x-ray 데이터셋
-- 14개 라벨의 train image 15000장, test image 3000장 (512x512x3) & train image의 image_id, class_id, x_min, y_min, x_max, y_max 정보가 들어있는 train.csv 파일. 
+- train image 15000장 (정상인: 10,606, 환자: 4,394)
+- test image 3000장 
+- image shape : 512x512x3
+- bbox : image_id, class_id, x_min, y_min, x_max, y_max 
 - [Image Dataset](https://www.kaggle.com/datasets/awsaf49/vinbigdata-512-image-dataset) & [Label Dataset](https://www.kaggle.com/datasets/awsaf49/vinbigdata-yolo-labels-dataset)
 
 - <img src="https://user-images.githubusercontent.com/103362361/188309386-e74a9214-643e-495b-acb5-cf72e455e5b9.jpg"  width="300" height="200"/>
@@ -45,7 +49,11 @@
   
 ### Methods
 
-<img src="https://user-images.githubusercontent.com/103362361/189588057-11ec4eaf-dba6-4362-ba50-03466d25d85a.png"  width="400" height="300"/>
+- Augmentations : Rotation(90º), Flip(horizontal), Zoomin(10%), Cutmix, CLAHE, Equlization, Mosaic
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/103362361/189588057-11ec4eaf-dba6-4362-ba50-03466d25d85a.png"  width="500" height="300"/>
 
 - Progress
   - 병명 사전조사
@@ -74,7 +82,9 @@
   - CATEGORY C : Augmentation을 최대한 많이 사용할 경우 성능향상에 유의미한지를 알기 위해 사용 (30,758장)
   - CATEGORY D : 데이터 불균형 해소를 위해 가장 적은 양의 라벨(1,12)을 갖는 이미지만 augmentation을 적용 /  나머지 라벨은 down sampling (5,999장)
 
-분류(A)|분류(B)|분류(C)|분류(D)|
+
+
+CATEGORY A|CATEGORY B|CATEGORY C|CATEGORY D|
 -------|-------|-------|-------|
 원본|rotation : 90°|rotation : 90°|rotation : 90°|
 &nbsp;|flip: horizontal|flip: horizontal|flip: horizontal|
@@ -82,6 +92,7 @@
 &nbsp;|&nbsp;|cutmix|cutmix|
 &nbsp;|&nbsp;|mosaic|mosaic|
 &nbsp;|&nbsp;| CLAHE | CLAHE 
+&nbsp;|&nbsp;|Equalization|Equalization|
 
 <br/>
 
@@ -89,6 +100,8 @@
 <img src="https://user-images.githubusercontent.com/103362361/190089691-9c8b46b2-e6d6-4b44-919e-f2cf9f9ea1e7.png"  width="300" height="300"/>
 
 <br/>
+
+
 
 - 모델별 성능
 
@@ -98,10 +111,15 @@ EfficientDet | 0.038 | 0.046 | 0.052 | --
 Faster R-CNN | 0.012 | 0.098 | 0.013 | --
 YOLOX  |  0.021  | 0.068 | 0.147 | 0.070
 
+
+
 <br/>
 
+
 ### Requirements and Tools
-- Colab, Python, Pandas, OpenCV
+- Colab, Python, Pandas, OpenCV, PyTorch, numpy, sklearn, seaborn, matplotlib
+
+
 
 <br/>
 
