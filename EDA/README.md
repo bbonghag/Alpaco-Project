@@ -49,3 +49,7 @@
 
 <img src="https://user-images.githubusercontent.com/103362361/203063219-533f3ba5-1609-462f-ae4f-81cec55a26b1.png"  width="500" height="300"/>
 
+1. x축은 라벨, y축은 라벨당 총 개수
+2. no-finding을 제외한다면 4개의 라벨이 제일 많고 극도로 적은 2개의 라벨이 보인다
+3. 데이터의 불균형이 존재. 
+
